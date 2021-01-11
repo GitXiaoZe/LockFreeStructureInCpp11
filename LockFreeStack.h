@@ -71,7 +71,6 @@ class LockFreeStack{
             delete res;
             return ret;
         }
-
 };
 
 
@@ -130,8 +129,5 @@ class LockFreeStack<int>{
             return ret;
         }
 };
-
-
-
 
 #endif // !LOCKFREESTACK_H

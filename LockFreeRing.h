@@ -40,7 +40,7 @@ class LockFreeRing{
             assert(position);
             std::memset((void*)position, 0xFF, sizeof(ThreadPosition) * n);
             array = (T**)::memalign(getpagesize(), SIZE * sizeof(void*));
-            assert(position);
+            assert(array);
         }
 
         ~LockFreeRing(){
